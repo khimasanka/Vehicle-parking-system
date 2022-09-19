@@ -25,12 +25,12 @@
       </Label>
       <TextField fx:id="txtUsername" layoutX="180.0" layoutY="150.0" prefHeight="31.0" prefWidth="318.0" promptText="username" styleClass="textField" stylesheets="@../styles/style.css" />
       <PasswordField fx:id="txtPassword" layoutX="180.0" layoutY="207.0" prefHeight="31.0" prefWidth="318.0" promptText="password" styleClass="textField" stylesheets="@../styles/style.css" />
-      <JFXButton buttonType="RAISED" layoutX="129.0" layoutY="276.0" onAction="#btnCancelOnAction" prefHeight="46.0" prefWidth="111.0" styleClass="btnCancel" stylesheets="@../styles/style.css" text="Cancel" textFill="WHITE">
+      <JFXButton buttonType="RAISED" layoutX="110.0" layoutY="273.0" onAction="#btnCancelOnAction" prefHeight="46.0" prefWidth="111.0" styleClass="btnCancel" stylesheets="@../styles/style.css" text="Cancel" textFill="WHITE">
          <font>
             <Font name="Rockwell Extra Bold" size="19.0" />
          </font>
       </JFXButton>
-      <JFXButton buttonType="RAISED" layoutX="339.0" layoutY="273.0" onAction="#btnLoginOnAction" prefHeight="46.0" prefWidth="111.0" styleClass="btnLogin" stylesheets="@../styles/style.css" text="LogIn">
+      <JFXButton buttonType="RAISED" layoutX="339.0" layoutY="273.0" onAction="#btnLoginOnAction" prefHeight="46.0" prefWidth="111.0" styleClass="btnLogin" stylesheets="@../styles/style.css" text="Login">
          <font>
             <Font name="Rockwell Extra Bold" size="20.0" />
          </font>

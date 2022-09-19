@@ -83,6 +83,8 @@ public class HomePageFormController {
         Parent load = FXMLLoader.load(resource);
         Scene scene=new Scene(load);
         Stage stage=new Stage();
+        stage.setTitle("Login");
+        stage.setResizable(false);
         stage.setScene(scene);
         stage.show();
     }

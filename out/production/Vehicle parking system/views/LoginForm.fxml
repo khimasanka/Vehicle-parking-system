@@ -10,7 +10,7 @@
 <?import javafx.scene.text.Font?>
 
 
-<AnchorPane fx:id="loginContext" prefHeight="366.0" prefWidth="566.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginFormController">
+<AnchorPane fx:id="loginContext" prefHeight="366.0" prefWidth="566.0" styleClass="loginBackground" stylesheets="@../styles/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginFormController">
    <children>
       <FontAwesomeIconView glyphName="USER" layoutX="256.0" layoutY="99.0" size="70" />
       <Label layoutX="82.0" layoutY="154.0" text="Username">
@@ -23,14 +23,14 @@
             <Font name="Candara Bold" size="20.0" />
          </font>
       </Label>
-      <TextField fx:id="txtUsername" layoutX="180.0" layoutY="150.0" prefHeight="31.0" prefWidth="318.0" promptText="username" />
-      <PasswordField fx:id="txtPassword" layoutX="180.0" layoutY="207.0" prefHeight="31.0" prefWidth="318.0" promptText="password" />
-      <JFXButton buttonType="RAISED" layoutX="129.0" layoutY="288.0" onAction="#btnCancelOnAction" text="Cancel">
+      <TextField fx:id="txtUsername" layoutX="180.0" layoutY="150.0" prefHeight="31.0" prefWidth="318.0" promptText="username" styleClass="textField" stylesheets="@../styles/style.css" />
+      <PasswordField fx:id="txtPassword" layoutX="180.0" layoutY="207.0" prefHeight="31.0" prefWidth="318.0" promptText="password" styleClass="textField" stylesheets="@../styles/style.css" />
+      <JFXButton buttonType="RAISED" layoutX="110.0" layoutY="273.0" onAction="#btnCancelOnAction" prefHeight="46.0" prefWidth="111.0" styleClass="btnCancel" stylesheets="@../styles/style.css" text="Cancel" textFill="WHITE">
          <font>
-            <Font name="Rockwell Extra Bold" size="20.0" />
+            <Font name="Rockwell Extra Bold" size="19.0" />
          </font>
       </JFXButton>
-      <JFXButton buttonType="RAISED" layoutX="339.0" layoutY="288.0" onAction="#btnLoginOnAction" text="LogIn">
+      <JFXButton buttonType="RAISED" layoutX="339.0" layoutY="273.0" onAction="#btnLoginOnAction" prefHeight="46.0" prefWidth="111.0" styleClass="btnLogin" stylesheets="@../styles/style.css" text="Login">
          <font>
             <Font name="Rockwell Extra Bold" size="20.0" />
          </font>
