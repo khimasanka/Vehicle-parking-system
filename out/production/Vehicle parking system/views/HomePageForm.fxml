@@ -1,11 +1,108 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.HomePageFormController">
+<AnchorPane fx:id="HomeContext" prefHeight="569.0" prefWidth="822.0" style="-fx-background-color: white;" stylesheets="@../styles/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.HomePageFormController">
    <children>
-      <Text layoutX="258.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hello" />
+      <AnchorPane prefHeight="46.0" prefWidth="822.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="-3.0" prefHeight="46.0" prefWidth="831.0" styleClass="titlePane" stylesheets="@../styles/style.css" text="Parking System">
+               <font>
+                  <Font name="Gill Sans Ultra Bold Condensed" size="21.0" />
+               </font>
+            </Label>
+            <Separator layoutY="45.0" prefHeight="0.0" prefWidth="822.0" />
+         </children>
+      </AnchorPane>
+      <HBox layoutY="46.0" prefHeight="522.0" prefWidth="822.0">
+         <children>
+            <Pane prefHeight="522.0" prefWidth="403.0">
+               <children>
+                  <Label layoutX="28.0" layoutY="74.0" text="Select Vehicle">
+                     <font>
+                        <Font name="Gill Sans Ultra Bold Condensed" size="19.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="38.0" layoutY="151.0" text="Vehicle Type">
+                     <font>
+                        <Font name="Gill Sans Ultra Bold Condensed" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="82.0" layoutY="227.0" text="Driver">
+                     <font>
+                        <Font name="Gill Sans Ultra Bold Condensed" size="19.0" />
+                     </font>
+                  </Label>
+                  <ComboBox fx:id="cmbVehicle" layoutX="165.0" layoutY="69.0" prefHeight="31.0" prefWidth="215.0" styleClass="ashPane" stylesheets="@../styles/style.css" />
+                  <ComboBox fx:id="cmbDriver" layoutX="166.0" layoutY="221.0" prefHeight="31.0" prefWidth="215.0" styleClass="ashPane" stylesheets="@../styles/style.css" />
+                  <Pane layoutX="165.0" layoutY="148.0" prefHeight="31.0" prefWidth="215.0" styleClass="ashPane" stylesheets="@../styles/style.css">
+                     <children>
+                        <Label fx:id="lblVehicle" alignment="CENTER" layoutX="-3.0" layoutY="1.0" prefHeight="27.0" prefWidth="215.0" text="Van">
+                           <font>
+                              <Font name="Gadugi Bold" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <AnchorPane layoutX="23.0" layoutY="307.0" prefHeight="167.0" prefWidth="357.0" style="-fx-background-radius: 8;" styleClass="titlePane" stylesheets="@../styles/style.css">
+                     <children>
+                        <Label layoutX="92.0" layoutY="21.0" text="Your Parking Slot Number">
+                           <font>
+                              <Font name="Trebuchet MS Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Text fx:id="lblSlotNumber" layoutX="134.0" layoutY="132.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10">
+                           <font>
+                              <Font size="83.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </Pane>
+            <Pane prefHeight="522.0" prefWidth="419.0">
+               <children>
+                  <AnchorPane layoutX="31.0" layoutY="66.0" prefHeight="99.0" prefWidth="365.0" style="-fx-background-radius: 8;" styleClass="titlePane" stylesheets="@../styles/style.css">
+                     <children>
+                        <Label fx:id="lblDate" layoutX="14.0" layoutY="7.0" text="13/10/2020">
+                           <font>
+                              <Font name="System Bold" size="19.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblTime" layoutX="141.0" layoutY="13.0" text="08.35 AM">
+                           <font>
+                              <Font name="System Bold" size="48.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <JFXButton buttonType="RAISED" layoutX="31.0" layoutY="180.0" prefHeight="61.0" prefWidth="365.0" styleClass="ashPane" stylesheets="@../styles/style.css" text="Park Vehicle">
+                     <font>
+                        <Font name="Gill Sans Ultra Bold Condensed" size="21.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton buttonType="RAISED" layoutX="32.0" layoutY="270.0" prefHeight="61.0" prefWidth="365.0" styleClass="deliverShift" stylesheets="@../styles/style.css" text="On Delivery Shift">
+                     <font>
+                        <Font name="Gill Sans Ultra Bold Condensed" size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton buttonType="RAISED" layoutX="35.0" layoutY="380.0" prefHeight="61.0" prefWidth="357.0" styleClass="login" stylesheets="@../styles/style.css" text="Management Log In" textFill="WHITE">
+                     <font>
+                        <Font name="Gill Sans Ultra Bold Condensed" size="19.0" />
+                     </font>
+                  </JFXButton>
+                  <Separator layoutX="9.0" layoutY="54.0" orientation="VERTICAL" prefHeight="394.0" prefWidth="5.0" />
+               </children>
+            </Pane>
+         </children>
+      </HBox>
    </children>
 </AnchorPane>

@@ -28,7 +28,7 @@ public class AppInitializer extends Application {
         URL resource = getClass().getResource("views/HomePageForm.fxml");
         Parent load = FXMLLoader.load(resource);
         Scene scene=new Scene(load);
-
+        primaryStage.setResizable(false);
         primaryStage.setScene(scene);
         primaryStage.setTitle("Vehicle Parking System");
         primaryStage.show();
