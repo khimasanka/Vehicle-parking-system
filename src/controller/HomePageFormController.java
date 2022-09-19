@@ -13,6 +13,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 import javafx.util.Duration;
@@ -39,13 +40,13 @@ public class HomePageFormController {
     public JFXComboBox<String> vehicleTypeCmb;
     public JFXComboBox<String> driverCmb;
     public JFXTextField txtVehicleType;
-    public Button btnRefresh;
     public TextField slotID;
     public JFXButton btnPark;
     public JFXButton btnDelivery;
     public Label txtAnswer;
     public Label Date;
     public Label Time;
+    public FontAwesomeIconView btnRefresh;
 
     public void initialize() {
         setTimeToLbl();
@@ -170,10 +171,11 @@ public class HomePageFormController {
         }
     }
 
-    public void refreshOnAction(ActionEvent actionEvent) throws IOException {
+    public void refreshOnAction(MouseEvent mouseEvent) throws IOException {
         URL resource = getClass().getResource("../view/HomePageForm.fxml");
         Parent load = FXMLLoader.load(resource);
         HomePageContext.getChildren().clear();
         HomePageContext.getChildren().add(load);
     }
+
 }

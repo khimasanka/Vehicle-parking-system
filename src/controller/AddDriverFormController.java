@@ -96,7 +96,7 @@ public class AddDriverFormController {
         Pattern pattern=Pattern.compile(value);
         Matcher match=pattern.matcher(txtLicene.getText());
         if(!match.matches()){
-            dLabel3.setText("Invalid Licene Number!");
+            dLabel3.setText("Invalid License Number!");
         }else{
             dLabel3.setText("");
         }
