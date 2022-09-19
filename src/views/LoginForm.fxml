@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="loginContext" prefHeight="366.0" prefWidth="566.0" styleClass="loginBackground" stylesheets="@../styles/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginFormController">
+   <children>
+      <FontAwesomeIconView glyphName="USER" layoutX="256.0" layoutY="99.0" size="70" />
+      <Label layoutX="82.0" layoutY="154.0" text="Username">
+         <font>
+            <Font name="Candara Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="81.0" layoutY="211.0" text="Password">
+         <font>
+            <Font name="Candara Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtUsername" layoutX="180.0" layoutY="150.0" prefHeight="31.0" prefWidth="318.0" promptText="username" styleClass="textField" stylesheets="@../styles/style.css" />
+      <PasswordField fx:id="txtPassword" layoutX="180.0" layoutY="207.0" prefHeight="31.0" prefWidth="318.0" promptText="password" styleClass="textField" stylesheets="@../styles/style.css" />
+      <JFXButton buttonType="RAISED" layoutX="129.0" layoutY="276.0" onAction="#btnCancelOnAction" prefHeight="46.0" prefWidth="111.0" styleClass="btnCancel" stylesheets="@../styles/style.css" text="Cancel" textFill="WHITE">
+         <font>
+            <Font name="Rockwell Extra Bold" size="19.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="339.0" layoutY="273.0" onAction="#btnLoginOnAction" prefHeight="46.0" prefWidth="111.0" styleClass="btnLogin" stylesheets="@../styles/style.css" text="LogIn">
+         <font>
+            <Font name="Rockwell Extra Bold" size="20.0" />
+         </font>
+      </JFXButton>
+      <FontAwesomeIconView glyphName="LOCK" layoutX="58.0" layoutY="173.0" size="20" />
+      <FontAwesomeIconView glyphName="KEY" layoutX="55.0" layoutY="226.0" size="20" />
+      <Separator layoutX="184.0" layoutY="123.0" prefWidth="200.0" />
+   </children>
+</AnchorPane>

@@ -22,3 +22,34 @@
     -fx-border-width: 1px;
     -fx-border-color: #414141;
 }
+
+/*=========================== Login Form=====================================*/
+
+.loginBackground {
+    -fx-background-color: linear-gradient(to right, #e5e5e5, #ccdcfa);
+}
+
+.btnLogin {
+    -fx-background-color:#01BF72;
+    -fx-border-color: black;
+    -fx-background-radius: 25px;
+    -fx-border-radius: 25px;
+    -fx-border-width: 1px;
+}
+
+.btnCancel {
+    -fx-background-color:#E4422D;
+    -fx-border-color: black;
+    -fx-background-radius: 25px;
+    -fx-border-radius: 25px;
+    -fx-border-width: 1px;
+}
+
+.textField {
+    -fx-border-radius: 25px;
+    -fx-background-color: white;
+    -fx-border-width: 1px;
+    -fx-background-radius: 25px;
+}
+
+/*=============================================================================*/
