@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+	
+	<AnchorPane fx:id="addDriverContext" prefHeight="330.0" prefWidth="570.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddDriverFormController">
+		<children>
+			<Label layoutX="60.0" layoutY="19.0" text="Driver Name" />
+			<Label layoutX="117.0" layoutY="63.0" text="NIC" />
+			<Label layoutX="20.0" layoutY="108.0" text="Driving License No" />
+			<Label layoutX="83.0" layoutY="167.0" text="Address" />
+			<Label layoutX="85.0" layoutY="224.0" prefHeight="21.0" prefWidth="84.0" text="Contact" />
+			<TextField fx:id="txtDName" layoutX="183.0" layoutY="14.0" onAction="#moveToNIC" prefHeight="31.0" prefWidth="357.0" />
+			<TextField fx:id="txtNIC" layoutX="183.0" layoutY="57.0" onAction="#moveToLNo" prefHeight="31.0" prefWidth="357.0" />
+			<TextField fx:id="txtLNo" layoutX="183.0" layoutY="102.0" onAction="#moveToAddress" prefHeight="31.0" prefWidth="357.0" />
+			<TextField fx:id="txtContact" layoutX="183.0" layoutY="219.0" prefHeight="31.0" prefWidth="357.0" />
+			<TextArea fx:id="txtAddress" layoutX="185.0" layoutY="144.0" onDragDetected="#moveToContact" prefHeight="65.0" prefWidth="357.0" />
+			<JFXButton buttonType="RAISED" layoutX="412.0" layoutY="266.0" onAction="#saveDriverOnAction" prefHeight="40.0" prefWidth="130.0" style="-fx-background-color: #7111f8; -fx-background-radius: 20;" text="Add Driver" textFill="WHITE">
+				<cursor>
+					<Cursor fx:constant="HAND" />
+				</cursor>
+				<font>
+					<Font size="17.0" />
+				</font>
+			</JFXButton>
+		</children>
+	</AnchorPane>

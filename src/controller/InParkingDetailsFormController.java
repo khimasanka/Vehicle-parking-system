@@ -2,12 +2,14 @@ package controller;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.net.URL;
 import java.util.Objects;
 import java.util.Optional;
 
@@ -35,10 +37,25 @@ public class InParkingDetailsFormController {
 
     }
 
-    public void addVehicleOnAction(ActionEvent actionEvent) {
+    public void addVehicleOnAction(ActionEvent actionEvent) throws IOException {
+        URL resource = getClass().getResource("views/AddVehicleForm.fxml");
+        Parent load = FXMLLoader.load(resource);
+        Scene scene;
+        scene = new Scene(load);
+        Stage stage = new Stage();
+        stage.setScene(scene);
+        stage.setTitle("Add Vehicle");
+        stage.show();
     }
 
-    public void addDriverOnAction(ActionEvent actionEvent) {
+    public void addDriverOnAction(ActionEvent actionEvent) throws IOException {
+        URL resource = getClass().getResource("../views/AddDriverForm.fxml");
+        Parent load = FXMLLoader.load(resource);
+        Scene scene =new Scene(load);
+        Stage stage = new Stage();
+        stage.setScene(scene);
+        stage.setTitle("Add Vehicle");
+        stage.show();
     }
 
     public void logOut(ActionEvent actionEvent) {

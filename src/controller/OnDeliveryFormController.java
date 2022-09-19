@@ -31,5 +31,6 @@ public class OnDeliveryFormController {
     }
 
     public void logOut(ActionEvent actionEvent) {
+
     }
 }
