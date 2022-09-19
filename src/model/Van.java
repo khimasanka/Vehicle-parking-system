@@ -1,8 +1,8 @@
 package model;
 
-import java.io.IOException;
+import static controller.InParkingFormController.parkedVehiclesTMObservableList;
 
-import static controller.InParkingDetailsFormController.parkedVehiclesTMObservableList;
+import java.io.IOException;
 
 public class Van extends Vehicle{
     int[] vanSlots = new int[]{1,2,3,4,12,13};
