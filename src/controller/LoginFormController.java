@@ -1,5 +1,6 @@
 package controller;
 
+import com.jfoenix.controls.JFXButton;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -25,11 +26,22 @@ public class LoginFormController {
     public TextField txtUsername;
     public PasswordField txtPassword;
     public Label lblMsg;
+    public JFXButton btnCancel;
 
     public void btnCancelOnAction(ActionEvent actionEvent) {
+        Stage stage=(Stage)btnCancel.getScene().getWindow();
+        stage.close();
     }
 
     public void btnLoginOnAction(ActionEvent actionEvent) throws IOException {
+      loginLogic();
+    }
+
+    public void goToPassword(ActionEvent actionEvent) {
+        txtPassword.requestFocus();
+    }
+
+    public void loginLogic() throws IOException {
         String text = "admin";
         if (txtUsername.getText().isEmpty() || txtPassword.getText().isEmpty()) {
             lblMsg.setText("Please enter username and password!");
@@ -39,5 +51,9 @@ public class LoginFormController {
         }else{
             lblMsg.setText("Invalid username or password!");
         }
+    }
+
+    public void goToLogin(ActionEvent actionEvent) throws IOException {
+       loginLogic();
     }
 }
