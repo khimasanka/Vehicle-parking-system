@@ -38,7 +38,7 @@
          </font>
       </JFXButton>
       <TextField fx:id="managementName" layoutX="223.0" layoutY="164.0" onAction="#goToPassword" prefHeight="30.0" prefWidth="315.0" styleClass="textField2" stylesheets="@../styles/style.css" />
-      <PasswordField fx:id="managementPassword" layoutX="223.0" layoutY="219.0" prefHeight="31.0" prefWidth="315.0" styleClass="textField2" stylesheets="@../styles/style.css" />
+      <PasswordField fx:id="managementPassword" layoutX="223.0" layoutY="219.0" onAction="#loginEnter" prefHeight="31.0" prefWidth="315.0" styleClass="textField2" stylesheets="@../styles/style.css" />
       <FontAwesomeIconView glyphName="LOCK" layoutX="259.0" layoutY="115.0" size="100" />
    </children>
 </AnchorPane>

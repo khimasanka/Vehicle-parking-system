@@ -23,16 +23,21 @@ public class ManagementLogInFormController {
     public JFXButton btnCancel;
 
     public void goToTasks(ActionEvent actionEvent) throws IOException {
-        if(managementPassword.getText().equals("1234") & managementName.getText().equalsIgnoreCase("Admin")){
+      loginLogic();
+    }
+
+    public void loginLogic()throws IOException {
+        String text = "admin";
+        if (managementPassword.getText().isEmpty() || managementName.getText().isEmpty()) {
+            managementLabel.setText("Please enter username and password!");
+        }else if(managementName.getText().equalsIgnoreCase(text) & managementPassword.getText().equalsIgnoreCase(text)){
             URL resource = getClass().getResource("../view/DetailsForm.fxml");
             Parent load = FXMLLoader.load(resource);
             Stage window = (Stage) ManagementLogInContext.getScene().getWindow();
             window.setScene(new Scene(load));
         }
-        else{
-            managementLabel.setText("Enter correct username or password");
-        }
     }
+
 
     public void goToHomePage(ActionEvent actionEvent) throws IOException {
        Stage stage=(Stage)btnCancel.getScene().getWindow();
@@ -42,4 +47,7 @@ public class ManagementLogInFormController {
         managementPassword.requestFocus();
     }
 
+    public void loginEnter(ActionEvent actionEvent) throws IOException {
+        loginLogic();
+    }
 }

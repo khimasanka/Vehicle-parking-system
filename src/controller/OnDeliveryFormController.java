@@ -8,7 +8,7 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import view.tm.OnDeliveryVehicleTM;
 
 
-public class OnDelivaryFormController {
+public class OnDeliveryFormController {
     public TableView tblOnDelivery;
     public TableColumn colNo;
     public TableColumn colType;

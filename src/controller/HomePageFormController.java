@@ -22,17 +22,15 @@ import view.tm.ParkVehicleTM;
 
 import java.io.IOException;
 import java.net.URL;
-import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
-import java.util.Calendar;
 import java.util.Date;
 
 import static controller.AddDriverFormController.driverArrayList;
 import static controller.AddVehicleFormController.vehicleList;
 import static controller.InParkingFormController.parkedVehiclesTMObservableList;
-import static controller.OnDelivaryFormController.onDeliveryVehiclesTMObservableList;
+import static controller.OnDeliveryFormController.onDeliveryVehiclesTMObservableList;
 
 
 
