@@ -42,15 +42,14 @@ public class LoginFormController {
     }
 
     public void loginLogic() throws IOException {
-        String text = "admin";
+       /* String text = "admin";
         if (txtUsername.getText().isEmpty() || txtPassword.getText().isEmpty()) {
             lblMsg.setText("Please enter username and password!");
-        }else if(txtUsername.getText().equalsIgnoreCase(text) & txtPassword.getText().equalsIgnoreCase(text)){
+        }else if(txtUsername.getText().equalsIgnoreCase(text) & txtPassword.getText().equalsIgnoreCase(text)){*/
             Stage window =(Stage) loginContext.getScene().getWindow();
+            window.setTitle("Administrator");
             window.setScene(new Scene(FXMLLoader.load(Objects.requireNonNull(getClass().getResource("../views/InParkingDetailsForm.fxml")))));
-        }else{
-            lblMsg.setText("Invalid username or password!");
-        }
+
     }
 
     public void goToLogin(ActionEvent actionEvent) throws IOException {

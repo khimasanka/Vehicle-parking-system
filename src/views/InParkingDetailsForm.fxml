@@ -14,7 +14,7 @@
    <children>
       <ImageView fitHeight="42.0" fitWidth="37.0" layoutX="717.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../asserts/log Out.png" />
+            <Image url="@../asserts/logout.png" />
          </image>
       </ImageView>
       <AnchorPane layoutY="80.0" prefHeight="413.0" prefWidth="761.0" style="-fx-background-color: #dad8d8;">
