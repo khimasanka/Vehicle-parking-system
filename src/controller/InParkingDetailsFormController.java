@@ -1,5 +1,7 @@
 package controller;
 
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -7,6 +9,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
+import model.tm.ParkVehicleTM;
 
 import java.io.IOException;
 import java.net.URL;
@@ -31,6 +34,9 @@ public class InParkingDetailsFormController {
     public Label test;
     public Stage stage;
 
+    public static ObservableList<ParkVehicleTM> parkedVehiclesTMObservableList = FXCollections.observableArrayList();
+
+
     public void onDeliveryOnAction(ActionEvent actionEvent) throws IOException {
         Stage window = (Stage) inParkingFull.getScene().getWindow();
         window.setScene(new Scene(FXMLLoader.load(getClass().getResource("../views/OnDeliveryForm.fxml"))));
@@ -38,11 +44,12 @@ public class InParkingDetailsFormController {
     }
 
     public void addVehicleOnAction(ActionEvent actionEvent) throws IOException {
-        URL resource = getClass().getResource("views/AddVehicleForm.fxml");
+        URL resource = getClass().getResource("../views/AddVehicleForm.fxml");
         Parent load = FXMLLoader.load(resource);
         Scene scene;
         scene = new Scene(load);
         Stage stage = new Stage();
+        stage.setResizable(false);
         stage.setScene(scene);
         stage.setTitle("Add Vehicle");
         stage.show();
@@ -53,8 +60,9 @@ public class InParkingDetailsFormController {
         Parent load = FXMLLoader.load(resource);
         Scene scene =new Scene(load);
         Stage stage = new Stage();
+        stage.setResizable(false);
         stage.setScene(scene);
-        stage.setTitle("Add Vehicle");
+        stage.setTitle("Add Driver");
         stage.show();
     }
 
