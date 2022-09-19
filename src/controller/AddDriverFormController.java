@@ -45,6 +45,10 @@ public class AddDriverFormController {
     }
 
     public void addDriverOnAction(ActionEvent actionEvent) {
+        driverSaveLogic();
+    }
+
+    public void driverSaveLogic(){
         Drivers driver = new Drivers(txtName.getText(),txtNIC.getText(),txtLicene.getText(),txtAddress.getText(),Integer.parseInt(txtContact.getText()));
 
         txtName.clear();txtNIC.clear();txtLicene.clear();txtAddress.clear();txtContact.clear();
@@ -77,7 +81,7 @@ public class AddDriverFormController {
     }
 
     public void checkingDAddress(javafx.scene.input.KeyEvent keyEvent) {
-        String value ="^([A-Za-z]{3,40})$";
+        String value ="^([A-z ]{3,40})$";
         Pattern pattern=Pattern.compile(value);
         Matcher match=pattern.matcher(txtAddress.getText());
         if(!match.matches()){
@@ -88,7 +92,7 @@ public class AddDriverFormController {
     }
 
     public void checkingDLiceneNo(javafx.scene.input.KeyEvent keyEvent) {
-        String value ="^([A-Z]{1}.([0-9]{7}))$";
+        String value ="^([A-z]{1}.([0-9]{7}))$";
         Pattern pattern=Pattern.compile(value);
         Matcher match=pattern.matcher(txtLicene.getText());
         if(!match.matches()){
@@ -99,7 +103,7 @@ public class AddDriverFormController {
     }
 
     public void checkingDNIC(javafx.scene.input.KeyEvent keyEvent) {
-        String value ="^([0-9]{11}.([A-Z]{1}))$";
+        String value ="^([0-9]{8}.([v]{1}))$";
         Pattern pattern=Pattern.compile(value);
         Matcher match=pattern.matcher(txtNIC.getText());
         if(!match.matches()){
@@ -110,7 +114,7 @@ public class AddDriverFormController {
     }
 
     public void checkingDName(javafx.scene.input.KeyEvent keyEvent) {
-        String value ="^([A-Za-z]{1,30})$";
+        String value ="^([A-z]{1,30})$";
         Pattern pattern=Pattern.compile(value);
         Matcher match=pattern.matcher(txtName.getText());
         if(!match.matches()){
@@ -138,5 +142,7 @@ public class AddDriverFormController {
     }
 
 
-
+    public void saveDriverOnEnter(ActionEvent actionEvent) {
+        driverSaveLogic();
+    }
 }

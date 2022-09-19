@@ -46,6 +46,10 @@ public class AddVehicleFormController {
     }
 
     public void addVehicle(ActionEvent actionEvent) {
+        saveMethodLogic();
+    }
+
+    public void saveMethodLogic(){
         if(vehicleList.size()==14){
             new Alert(Alert.AlertType.WARNING,"You Cannot Add Vehicles!...", ButtonType.CLOSE).show();
         }else{
@@ -127,7 +131,7 @@ public class AddVehicleFormController {
         }
     }
     public void checkingVehicleNo(javafx.scene.input.KeyEvent keyEvent) {
-        String value ="^([A-Z0-9 ]{1,3}[-]([0-9]{4}))$";
+        String value ="^([A-z0-9 ]{1,3}[-]([0-9]{4}))$";
         Pattern pattern= Pattern.compile(value);
         Matcher match=pattern.matcher(vehicleNo.getText());
 
@@ -174,4 +178,7 @@ public class AddVehicleFormController {
     }
 
 
+    public void saveOnClickEnter(ActionEvent actionEvent) {
+        saveMethodLogic();
+    }
 }

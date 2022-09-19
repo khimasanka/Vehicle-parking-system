@@ -42,7 +42,7 @@
          <font>
             <Font size="16.0" />
          </font></JFXTextField>
-      <JFXTextField fx:id="noOfPassengers" layoutX="289.0" layoutY="215.0" onKeyReleased="#checkingNoOfPassengers" opacity="0.7" prefHeight="27.0" prefWidth="368.0" promptText="xx" style="-fx-background-color: #e7e7e7;">
+      <JFXTextField fx:id="noOfPassengers" layoutX="289.0" layoutY="215.0" onAction="#saveOnClickEnter" onKeyReleased="#checkingNoOfPassengers" opacity="0.7" prefHeight="27.0" prefWidth="368.0" promptText="xx" style="-fx-background-color: #e7e7e7;">
          <font>
             <Font size="16.0" />
          </font></JFXTextField>
@@ -54,7 +54,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </JFXButton>
-      <TableView fx:id="tblVehicle" layoutX="56.0" layoutY="264.0" prefHeight="218.0" prefWidth="842.0" styleClass="table-row-cell" stylesheets="@../styles/style.css">
+      <TableView fx:id="tblVehicle" layoutX="56.0" layoutY="288.0" prefHeight="187.0" prefWidth="842.0" styleClass="table-row-cell" stylesheets="@../styles/style.css">
         <columns>
           <TableColumn fx:id="colVNo" prefWidth="233.0" text="Vehicle No" />
           <TableColumn fx:id="colVType" prefWidth="188.0" text="Vehicle Type" />
