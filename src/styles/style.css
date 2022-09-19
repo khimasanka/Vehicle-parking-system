@@ -7,12 +7,32 @@
     -fx-background-radius: 8px;
 }
 
+.ashPaneBtn{
+    -fx-background-color: #d9c8c8;
+    -fx-background-radius: 8px;
+    -fx-animated: 1s;
+}
+
+.ashPaneBtn:hover{
+    -fx-scale-x: 1.03;
+    -fx-scale-y: 1.03;
+    -fx-scale-z: 1.03;
+    -fx-animated: 1s;
+}
+
 .deliverShift{
     -fx-background-color: #e7e7db;
     -fx-border-width: 2px;
     -fx-border-color: #7e7c7c;
     -fx-background-radius: 8px;
     -fx-border-radius: 8px;
+    -fx-animated: 1s;
+}
+
+.deliverShift:hover{
+    -fx-scale-x: 1.03;
+    -fx-scale-y: 1.03;
+    -fx-scale-z: 1.03;
 }
 
 .login{
@@ -21,6 +41,12 @@
     -fx-background-radius: 8px;
     -fx-border-width: 1px;
     -fx-border-color: #414141;
+}
+
+.login:hover {
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+    -fx-scale-z: 1.05;
 }
 
 /*=========================== Login Form=====================================*/
@@ -35,6 +61,14 @@
     -fx-background-radius: 25px;
     -fx-border-radius: 25px;
     -fx-border-width: 1px;
+    -fx-animated: 1s;
+}
+
+.btnLogin:hover {
+    -fx-background-color: Black;
+    -fx-scale-x: 1.07;
+    -fx-scale-y: 1.07;
+    -fx-scale-z: 1.07;
 }
 
 .btnCancel {
@@ -43,6 +77,13 @@
     -fx-background-radius: 25px;
     -fx-border-radius: 25px;
     -fx-border-width: 1px;
+}
+
+.btnCancel:hover {
+    -fx-background-color: #ef2c00;
+    -fx-scale-x: 1.07;
+    -fx-scale-y: 1.07;
+    -fx-scale-z: 1.07;
 }
 
 .textField {

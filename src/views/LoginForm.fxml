@@ -29,7 +29,7 @@
             <Font name="Rockwell Extra Bold" size="19.0" />
          </font>
       </JFXButton>
-      <JFXButton buttonType="RAISED" layoutX="339.0" layoutY="273.0" onAction="#btnLoginOnAction" prefHeight="46.0" prefWidth="111.0" styleClass="btnLogin" stylesheets="@../styles/style.css" text="Login">
+      <JFXButton buttonType="RAISED" layoutX="339.0" layoutY="273.0" onAction="#btnLoginOnAction" prefHeight="46.0" prefWidth="111.0" styleClass="btnLogin" stylesheets="@../styles/style.css" text="Login" textFill="WHITE">
          <font>
             <Font name="Rockwell Extra Bold" size="20.0" />
          </font>

@@ -85,7 +85,7 @@
                         </Label>
                      </children>
                   </AnchorPane>
-                  <JFXButton buttonType="RAISED" layoutX="31.0" layoutY="187.0" onAction="#btnParkOnAction" prefHeight="61.0" prefWidth="365.0" styleClass="ashPane" stylesheets="@../styles/style.css" text="Park Vehicle">
+                  <JFXButton buttonType="RAISED" layoutX="31.0" layoutY="187.0" onAction="#btnParkOnAction" prefHeight="61.0" prefWidth="365.0" styleClass="ashPaneBtn" stylesheets="@../styles/style.css" text="Park Vehicle">
                      <font>
                         <Font name="Gill Sans Ultra Bold Condensed" size="21.0" />
                      </font>
