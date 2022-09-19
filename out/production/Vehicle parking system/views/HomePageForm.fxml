@@ -84,17 +84,17 @@
                         </Label>
                      </children>
                   </AnchorPane>
-                  <JFXButton buttonType="RAISED" layoutX="31.0" layoutY="180.0" prefHeight="61.0" prefWidth="365.0" styleClass="ashPane" stylesheets="@../styles/style.css" text="Park Vehicle">
+                  <JFXButton buttonType="RAISED" layoutX="31.0" layoutY="180.0" onAction="#btnParkOnAction" prefHeight="61.0" prefWidth="365.0" styleClass="ashPane" stylesheets="@../styles/style.css" text="Park Vehicle">
                      <font>
                         <Font name="Gill Sans Ultra Bold Condensed" size="21.0" />
                      </font>
                   </JFXButton>
-                  <JFXButton buttonType="RAISED" layoutX="32.0" layoutY="270.0" prefHeight="61.0" prefWidth="365.0" styleClass="deliverShift" stylesheets="@../styles/style.css" text="On Delivery Shift">
+                  <JFXButton buttonType="RAISED" layoutX="32.0" layoutY="270.0" onAction="#btnDeliverOnAction" prefHeight="61.0" prefWidth="365.0" styleClass="deliverShift" stylesheets="@../styles/style.css" text="On Delivery Shift">
                      <font>
                         <Font name="Gill Sans Ultra Bold Condensed" size="20.0" />
                      </font>
                   </JFXButton>
-                  <JFXButton buttonType="RAISED" layoutX="35.0" layoutY="380.0" prefHeight="61.0" prefWidth="357.0" styleClass="login" stylesheets="@../styles/style.css" text="Management Log In" textFill="WHITE">
+                  <JFXButton buttonType="RAISED" layoutX="35.0" layoutY="380.0" onAction="#btnLogInOnAction" prefHeight="61.0" prefWidth="357.0" styleClass="login" stylesheets="@../styles/style.css" text="Management Log In" textFill="WHITE">
                      <font>
                         <Font name="Gill Sans Ultra Bold Condensed" size="19.0" />
                      </font>

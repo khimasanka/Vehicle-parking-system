@@ -12,6 +12,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
 import java.io.IOException;
 import java.net.URL;
@@ -29,6 +30,8 @@ public class AppInitializer extends Application {
         Parent load = FXMLLoader.load(resource);
         Scene scene=new Scene(load);
         primaryStage.setResizable(false);
+        scene.getStylesheets().add("styles/style.css");
+        primaryStage.initStyle(StageStyle.UTILITY);
         primaryStage.setScene(scene);
         primaryStage.setTitle("Vehicle Parking System");
         primaryStage.show();
